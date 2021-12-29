@@ -12,6 +12,7 @@
         <module>gateway</module>
         <module>auth-service</module>
         <module>demo-common</module>
+        <module>demo-portal</module>
     </modules>
 
     <parent>

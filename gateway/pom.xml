@@ -57,6 +57,16 @@
             <artifactId>nimbus-jose-jwt</artifactId>
             <version>9.10.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>demo-common</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-web</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
 
     <build>
