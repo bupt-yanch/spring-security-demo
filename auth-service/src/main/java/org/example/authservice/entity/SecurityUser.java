@@ -12,7 +12,7 @@ import java.util.Collection;
 @Builder
 public class SecurityUser implements UserDetails {
 
-    private int id;
+    private String id;
     private String userName;
     private String password;
     private Boolean isEnabled;

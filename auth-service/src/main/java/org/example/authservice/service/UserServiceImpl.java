@@ -30,6 +30,7 @@ public class UserServiceImpl implements UserDetailsService {
         String pwd = passwordEncoder.encode("yanch");
         mockUsers = new ArrayList<>();
         SecurityUser user1 = SecurityUser.builder()
+                .id("001")
                 .userName("yanch")
                 .password(pwd)
                 .authorities(Arrays.asList(new SimpleGrantedAuthority("ADMIN")))
@@ -37,6 +38,7 @@ public class UserServiceImpl implements UserDetailsService {
                 .build();
         mockUsers.add(user1);
         SecurityUser user2 = SecurityUser.builder()
+                .id("002")
                 .userName("yanch1")
                 .password(pwd)
                 .authorities(Arrays.asList(new SimpleGrantedAuthority("USER")))
