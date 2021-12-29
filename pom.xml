@@ -11,6 +11,7 @@
     <modules>
         <module>gateway</module>
         <module>auth-service</module>
+        <module>demo-common</module>
     </modules>
 
     <parent>
@@ -26,6 +27,7 @@
         <spring-data-commons.version>2.5.5</spring-data-commons.version>
         <alibaba.cloud.version>2.2.0.RELEASE</alibaba.cloud.version>
         <nimbus-jose-jwt.version>8.16</nimbus-jose-jwt.version>
+        <demo-common.version>1.0</demo-common.version>
     </properties>
 
     <dependencies>
@@ -70,6 +72,11 @@
                 <groupId>com.nimbusds</groupId>
                 <artifactId>nimbus-jose-jwt</artifactId>
                 <version>${nimbus-jose-jwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>demo-common</artifactId>
+                <version>${demo-common.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
